@@ -1,8 +1,7 @@
 module.exports = {
-  pathPrefix: "/gatsby-react-bootstrap-starter",
   siteMetadata: {
     title: `Matt Cotter`,
-    description: `Matt Cotter is a web developer based out of Dayton, Ohio.`,
+    description: `Matt Cotter is a freelance web developer from Ohio.`,
     author: `Matt Cotter`,
   },
   plugins: [

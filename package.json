@@ -6,7 +6,7 @@
   "author": "Matt Cotter <cotter.m@gmail.com>",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "gatsby": "^2.3.34",
+    "gatsby": "^2.18.18",
     "gatsby-image": "^2.0.41",
     "gatsby-plugin-advanced-sitemap": "^1.4.1",
     "gatsby-plugin-google-analytics": "^2.1.14",
@@ -30,7 +30,7 @@
     "react-icons": "^3.6.1"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^2.2.0",
     "prettier": "^1.17.0"
   },
   "keywords": [
@@ -44,7 +44,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "repository": {
     "type": "git",
@@ -53,5 +53,5 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "homepage": "https://billyjacoby.github.io/gatsby-react-bootstrap-starter/"
+  "homepage": "https://mattcotter.github.io"
 }
