@@ -1,32 +1,20 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { Row, Col, Container } from 'react-bootstrap'
+import logo from "../images/matt-cotter-design.svg"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#20232a`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+  <header>
+    <Container fluid="true">
+      <Row>
+        <Col md="8">
+            <Link to="/">
+              <img src={ logo } alt="Matt Cotter's Logo" className="logo" />
+            </Link>
+        </Col>
+      </Row>
+    </Container>
   </header>
 )
 
@@ -35,7 +23,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: `Matt Cotter`,
 }
 
 export default Header

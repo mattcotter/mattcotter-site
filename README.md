@@ -1,9 +1,3 @@
-# Gatsby React Bootstrap Starter
+# Gatsby-based Theme for m-c.io
 
-A GatsbyJS starter that includes
-
-- react-bootstrap
-- react-icons
-- sticky on scroll navbar
-- SASS compiler
-- basic layout
+Modified [Gatsby Starter for Bootstrap](https://github.com/jaxx2104/gatsby-starter-bootstrap).

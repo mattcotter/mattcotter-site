@@ -1,66 +1,51 @@
 import React from "react"
-import { Row, Col, Container, ListGroup } from "react-bootstrap"
+import { Row, Col, Container } from "react-bootstrap"
+import ge from "../images/ge-logo.svg"
+import { FaTwitter, FaInstagram, FaGithub, FaEnvelope, FaMediumM } from "react-icons/fa"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Nav from 'react-bootstrap/Nav'
 
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
-    <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
-    <Container className="text-center">
+    <SEO title="Home" keywords={[`Matt Cotter`, `Web Developer`, `Dayton, OH`, `Cincinnati, OH`, `Columbus, OH`, `Vue Developer`, `React Developer`, `Freelance`]} />
+    <Container fluid="true">
       <Row>
-        <Col>
+        <Col xl="4" md>
+          <h1>Hey! <span role="img" aria-label="Wave Emoji">👋</span></h1>
+          <h2>My name is <span>Matt Cotter.</span></h2>
           <p>
-            This is a Gatsby Starter that I frequently use to get jump started
-            on quick website builds. It includes the following packages:
+            I live in Dayton, OH and I'm a Lead Front End Developer at 
+            <span className="work-work-work"><img className="ge-logo" src={ge} alt="General Electric Logo" />GE Aviation.</span>
           </p>
-        </Col>
-      </Row>
-      <Row className="justify-content-center my-3">
-        <Col md="6">
-          <ListGroup>
-            <ListGroup.Item
-              action
-              href="https://getbootstrap.com"
-              target="_blank"
-            >
-              Bootstrap
-            </ListGroup.Item>
-            <ListGroup.Item
-              action
-              href="https://react-bootstrap.github.io/"
-              target="_blank"
-            >
-              react-bootstrap
-            </ListGroup.Item>
-            <ListGroup.Item
-              action
-              href="https://react-icons.netlify.com"
-              target="_blank"
-            >
-              react-icons
-            </ListGroup.Item>
-            <ListGroup.Item
-              action
-              href="https://www.gatsbyjs.org/packages/gatsby-plugin-sass/"
-              target="_blank"
-            >
-              gatsby-plugin-sass
-            </ListGroup.Item>
-          </ListGroup>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <p>
-            This starter also includes a navbar that sticks to the top of the
-            screen when the user scrolls past it, and a footer that stays at the
-            bottom of the screen.
-          </p>
-          <p>
-            For more documentation on these packages and how they work, please
-            refer to the pages linked in the list above.
-          </p>
+          <Nav as="ul">
+            <Nav.Item as="li">
+              <Nav.Link className="pl-0" href="https://twitter.com/virt">
+                <FaTwitter />
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item as="li">
+              <Nav.Link href="https://instagram.com/mattcotter">
+                <FaInstagram />
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item as="li">
+              <Nav.Link href="https://github.com/mattcotter">
+                <FaGithub />
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="https://medium.com/@virt">
+                <FaMediumM />
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="mailto:cotter.m@gmail.com">
+                <FaEnvelope />
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
         </Col>
       </Row>
     </Container>
